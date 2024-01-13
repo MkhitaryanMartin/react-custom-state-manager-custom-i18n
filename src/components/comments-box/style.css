@@ -1,0 +1,19 @@
+.CommentsBox {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+}
+
+.CommentsBox-title {
+  font-size: 24px;
+}
+
+.CommentsBox-link {
+  margin-top: 30px;
+}
+
+.CommentsBox-link a,
+.CommentsBox-link a:link,
+.CommentsBox-link a:visited {
+  color: #0087e9;
+}

@@ -1,0 +1,29 @@
+name: Build Test
+env:
+  VERCEL_ORG_ID: team_nuZTpjMFtjg6nYvRq8D59qS1
+  VERCEL_PROJECT_ID: prj_DjaAeRmIZ6Nsl8pNbWl8YftMgHbO
+on:
+  pull_request:
+    branches:
+      - lecture-1
+      - lecture-2
+      - lecture-3
+      - lecture-4
+      - lecture-5
+jobs:
+  Deploy-Preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Environments
+        run: vercel pull --yes --environment=preview --token=1Ofcwcd6Y7VNHLQoGns6Dqb6
+
+      - name: Build
+        run: vercel build --token=1Ofcwcd6Y7VNHLQoGns6Dqb6
+
+      - name: Deploy
+        run: vercel deploy --prebuilt --token=1Ofcwcd6Y7VNHLQoGns6Dqb6

@@ -1,0 +1,77 @@
+.CommentItem {
+  padding-top: 30px;
+}
+
+.CommentItem-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CommentItem-header {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.CommentItem-author {
+  font-weight: 700;
+}
+
+.CommentItem-active {
+  color: #666;
+}
+
+.CommentItem-date {
+  color: #666;
+}
+
+.CommentItem-text p {
+  font-size: 14px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.CommentItem-actions a,
+.CommentItem-actions a:link,
+.CommentItem-actions a:visited {
+  color: #0087e9;
+  font-size: 12px;
+  border: none;
+  background-color: #fff;
+  padding: 0;
+  cursor: pointer;
+}
+
+.CommentItem-children {
+  max-width: 914px;
+}
+
+.CommentItem-children--withMargin {
+  max-width: 914px;
+  margin-left: 30px;
+}
+
+.CommentItem-container {
+  margin-left: 30px;
+}
+
+.CommentItem-link {
+  margin-top: 30px;
+}
+
+.CommentItem-link a,
+.CommentItem-link a:link,
+.CommentItem-link a:visited {
+  color: #0087e9;
+}
+
+.CommentItem-link button {
+  color: #666;
+  font-size: inherit;
+  border: none;
+  background-color: #fff;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}

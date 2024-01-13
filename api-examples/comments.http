@@ -1,0 +1,5 @@
+# Комментрии к товару
+
+GET http://example.front.ylab.io/api/v1/comments?fields=items(_id,text,dateCreate,author(profile(name)),parent(_id,_type),isDeleted),count&limit=*&search[parent]=65817bed5c295a2ff2fcd189
+
+# Остальные методы в http://example.front.ylab.io/api/v1/docs/ (http://localhost:8010/api/v1/docs/)
